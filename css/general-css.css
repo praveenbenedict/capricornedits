@@ -1,0 +1,36 @@
+body{
+    margin:0px;
+    overflow-x:hidden;
+    font-family: 'Lato', sans-serif;;
+}
+.vertical-align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.text-center{
+    text-align: center;
+}
+.container{
+    overflow: hidden;
+    display: flex;
+}
+.background-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.white-font{
+    color: white;
+}
+.roboto-font{    
+    font-family: 'Roboto', sans-serif;
+}
+.ubuntu-font{
+    font-family: 'Ubuntu', sans-serif;
+}
+.raleway-font{
+    font-family: 'Raleway', sans-serif;
+}
