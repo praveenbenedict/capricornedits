@@ -15,7 +15,7 @@ body{
 }
 .container{
     overflow: hidden;
-    display: flex;
+    /* display: flex; */
 }
 .background-image{
     background-size: cover;
@@ -34,3 +34,61 @@ body{
 .raleway-font{
     font-family: 'Raleway', sans-serif;
 }
+.navbar {
+
+    border : none;
+  
+}
+  
+.navbar-brand {
+  
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    color:white!important;
+  
+}
+
+nav a{
+    color: white!important;
+    font-size: 16px!important;
+}
+
+@media screen and (min-width : 768px) {
+    .navbar-custom {
+
+        height: 80px;
+        background: transparent !important;
+
+    }
+    nav a {
+
+        background: transparent !important;
+
+    }
+    .navbar-custom .navbar-brand{
+        margin-top : 20px;
+        font-size : 30px;
+        padding : 10px;
+        transition: all ease .5s;
+    }
+    .navbar-custom .nav {
+
+        margin-top : 15px;
+
+    }
+    .navbar-fade {
+
+        height: 50px;
+        background: black;
+    }
+}
+@media screen and (max-width : 767px){
+    .navbar{
+
+        opacity: 1;
+
+    }
+}
+
+

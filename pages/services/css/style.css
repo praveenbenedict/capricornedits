@@ -1,26 +1,29 @@
 
+/* .container {
+    margin-top: 50px;
+} */
 
-
-body,
+/* body,
 h1,
 h4{
     margin: 0;
     padding: 0;
     border: 0;
-}
+} */
 
 body {
-    height: 100vh;
-    background: 
+    
+    /* background: 
                 linear-gradient(to right bottom, rgba(68, 160, 141, 0.7), rgba(9, 54, 55, 0.7)), 
                 url(../img/background.jpeg);
-    
+     */
+    background: #1f68d5;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    ; 
+    background-size: cover; 
 }
 h1{
+    color: white;
     font-size: 40px;
     padding-bottom: 40px;    
 }
@@ -28,48 +31,33 @@ h4{
     font-size: 20px;
     padding-bottom: 40px;
 }
-
-.explanation{
-    text-align: center;
-    padding-top: 50px;
-}
-.example{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 60vh;
-    background-image: url(../img/who-we-are.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-}
-.images{
-    /* width: 200vh; */
-    /* margin-left: 10px; */
-    /* margin-right: 10px; */
-    /* margin-bottom: 20px; */
-}
-#realEstateImageEditing,
-#weddingPortrait,
-#imageClipping{    
-    background-color: rgb(59, 198, 223);
-    /* min-height: 100vh; */
-    color: white;
+.title{
+    margin-top: 90px;
 }
 
-#panaroma,
-#photoRetouching,
-#imageMasking{
-    /* min-height: 100vh; */
-    background-color: rgb(20, 20, 20);
-    color: rgb(59, 198, 223);
+.service-container{
+    margin-top: 50px;
+}
+.before-container{
+    background-image : url(../img/dummy.jpeg); 
+    height: 50vh;
+}
+.after-container{
+
+    background-image : url(../img/dummy.jpeg); 
+    height: 50vh;
 }
 
-#photoEditing,
-#photoManipulation,
-#photoRestoration{
-    background-color: rgb(255, 255, 255);    
-    /* min-height: 100vh; */
-    color: black;
+.text-container{
+    background: rgb(34,34,34);
+}
+
+@media only screen and (max-width:767px){
+    .before-container,
+    .after-container{
+        height: 40vh;
+    }
+    .service-container{
+        padding: 20px;
+    }
 }

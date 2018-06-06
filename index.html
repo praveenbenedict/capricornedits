@@ -19,11 +19,43 @@
     <title>Capricorn World</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#header">Capricorn Edits</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#header">Home</a>
+                    </li>
+                    <li>
+                        <a href="pages/services/services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact-us">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
     <header id="header" class="background-image vertical-align">
         <h1 class="white-font header-text">Meet the World's Most Friendly Real Estate Team.</h1>
         <div class="link-holder">
-            <a href="pages/services.html" class="header-link">Our Services</a>
+            <a href="pages/services/services.html" class="header-link">Our Services</a>
         </div>
 
     </header>
@@ -100,7 +132,7 @@
     </section>
 
     <section id="contact-us" class="background-image vertical-align white-font">
-        
+
         <section class="section-header white-font">
             <h1 class="text-center white-font">Contact Us</h1>
             <h3 class="text-center white-font">We are one contact form away. </h3>
@@ -131,6 +163,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Custom Scripts -->
+    <script src="script/general-script.js"></script>
     <script src="script/script.js"></script>
 </body>
 
