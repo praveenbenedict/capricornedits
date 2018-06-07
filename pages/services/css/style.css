@@ -23,7 +23,7 @@ body {
     background-size: cover; 
 }
 h1{
-    color: white;
+    /* color: black; */
     font-size: 40px;
     padding-bottom: 40px;    
 }
@@ -31,14 +31,43 @@ h4{
     font-size: 20px;
     padding-bottom: 40px;
 }
-.title{
-    margin-top: 90px;
+
+#header {
+    height: 100vh;
+    background-image: url(../img/services-header.jpeg);
+}
+#header .title{
+    /* margin-top: 90px; */
+    color: white;
+    margin-bottom: 60px;
 }
 
-.service-container{
-    margin-top: 50px;
+.local-nav{
+    background-color: #1c92d2;
 }
-.before-container{
+.local-nav ul{
+    padding-top: 16px;
+    padding-bottom: 15px;
+}
+
+.local-nav li{
+    padding: 5px;
+    color: black;
+    display: inline;
+    list-style-image: none;
+    list-style: none;
+}
+
+.local-nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.local-nav .navbar-fixed-top .container{
+    transition: all 3s ease-in-out;    
+}
+
+.before-after-container{
     background-image : url(../img/dummy.jpeg); 
     height: 50vh;
 }
@@ -47,17 +76,207 @@ h4{
     background-image : url(../img/dummy.jpeg); 
     height: 50vh;
 }
-
+.service-container{
+    /* margin-top: 50px; */
+}
 .text-container{
-    background: rgb(34,34,34);
+    /* background: rgb(34,34,34); */
+    background: white;
+    min-height:50vh;
 }
 
+#contact-us{
+    background: #1c92d2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1c92d2, #f2fcfe); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-100deg, #1c92d2, #f2fcfe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url(../../../img/contact-us.jpg);
+    background-size: cover; 
+    background-position: center;
+    padding: 0px;
+}
+#contact-us h1,
+#contact-us h3,
+#contact-us input{
+    color: black;
+}
+#contact-us form {
+     width: 100%; 
+     padding: 0;
+}
+
+#contact-us input{
+    display: block;
+    border: 1px solid white;
+    padding: 10px 10px 10px;
+    background: transparent;
+    
+    margin-bottom: 20px;
+    width: 80%;
+    color: black;
+}
+.button{
+    width: 120px;
+}
+input[type="submit"]{
+    border-radius: 0px;
+    border: 1px solid black;
+    background: transparent;
+    width: 80%;
+    padding: 20px;
+    color: black;
+}
+
+#contact-us .section-header{
+    margin-bottom : 30px;
+}
+
+@media only screen and (min-width:768px){
+    #contact-us{
+        min-height: 95vh;
+        background-size: cover;
+        /* background-position: center; */
+    }
+
+}
 @media only screen and (max-width:767px){
     .before-container,
     .after-container{
         height: 40vh;
     }
-    .service-container{
+    /* .service-container{
         padding: 20px;
+    } */
+    #contact-us{
+        min-height: 100vh;
+        background-position: center;
     }
+
+    #MenuIcon,
+    #MainMenu {
+        z-index: 99999;
+    }
+
+    #MenuIcon {
+        background-color: rgba(0, 0, 0, 0.466);
+        height: 60px;
+        width: 60px;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
+    #MenuIcon:hover {
+        cursor: pointer;
+    }
+
+    #MenuLine {
+        height: 4px;
+        width: 36px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .3s;
+    }
+
+    #MenuIcon:hover #MenuLine {
+        width: 40px;
+    }
+
+    #MenuLine::before {
+        content: '';
+        height: 4px;
+        width: 40px;
+        background-color: white;
+        position: absolute;
+        margin-top: 10px;
+        transition: all .3s;
+    }
+
+    #MenuIcon:hover #MenuLine::before {
+        width: 50px;
+    }
+
+    #MenuLine::after {
+        content: '';
+        height: 4px;
+        width: 40px;
+        background-color: white;
+        position: absolute;
+        margin-top: -10px;
+        transition: all .3s;
+    }
+
+    #MenuIcon:hover #MenuLine::after {
+        width: 50px;
+    }
+
+    #MainMenu {
+        height: 100vh;
+        width: 300px;
+        background-color: #181818;
+        position: fixed;
+        top: 0;
+        left: -300px;
+        transition: all .5s ease-in-out;
+    }
+
+    #MainMenu ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        font-family: arial;
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #MainMenu ul li {
+        margin: 20px;
+    }
+
+    #MainMenu ul li:hover {
+        cursor: pointer;
+    }
+
+    #MainMenu .line {
+        height: 2px;
+        width: 150px;
+        background-color: white;
+        margin-top: 10px;
+        position: absolute;
+        left: 50%;
+        border-radius: 2px;
+        transform: translate(-50%);
+        transition: all .3s;
+    }
+
+    #MainMenu ul li:hover .line {
+        width: 180px;
+    }
+
+    #MainMenu a{
+        text-decoration: none;
+        color: white;
+    }
+    #MainMenu a:hover{
+        color: #1c92d2;
+    }
+
+    #close {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        transform: translate(-50%);
+    }
+
+    #close:hover {
+        cursor: pointer;
+    }
+
+    
 }

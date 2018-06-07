@@ -4,7 +4,9 @@ $(document).ready(function(){
     //giving smooth scroll effect for navbar and landing button
     // $('.nav').localScroll();
     // $('.landing-btn').localScroll();
-    
+
+    $('a').smoothScroll();
+
     //Navbar scroll effect
     $(window).scroll(function() {//Gets fired when the user scrolls
         if($(document).scrollTop() > 50) {

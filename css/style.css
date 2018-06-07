@@ -90,9 +90,14 @@
     background: linear-gradient(-100deg, #1c92d2, #f2fcfe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-image: url(../img/contact-us.jpg);
     background-size: cover; 
+    background-position: center;
     padding: 0px;
 }
-
+#contact-us h1,
+#contact-us h3,
+#contact-us input{
+    color: black;
+}
 #contact-us form {
      width: 100%; 
      padding: 0;
@@ -103,20 +108,21 @@
     border: 1px solid white;
     padding: 10px 10px 10px;
     background: transparent;
+    
     margin-bottom: 20px;
     width: 80%;
-    color: white;
+    color: black;
 }
 .button{
     width: 120px;
 }
 input[type="submit"]{
     border-radius: 0px;
-    border: 1px solid white;
+    border: 1px solid black;
     background: transparent;
     width: 80%;
     padding: 20px;
-    color: white;
+    color: black;
 }
 
 #contact-us .section-header{
